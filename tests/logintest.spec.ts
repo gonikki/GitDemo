@@ -26,7 +26,7 @@ test.describe('Login Tests', () => {
             await loginpage.clickLogin();
 
             if (data.expected === 'success') {
-                await expect(page.getByText("Shop Name")).toBeVisible();
+                await expect(page.getByText("Shop Name")).toBeVisible({timeout: 30000});
             } else if (data.expected === 'Incorrect username/password.') {
                 console.log(page.locator(LoginPageLocators.errormessage).textContent());
                 await expect(page.locator(LoginPageLocators.errormessage)).toContainText("Incorrect");

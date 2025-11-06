@@ -1,0 +1,7 @@
+[
+{"username" : "rahulshettyacademy", "password": "learning" ,"expected": "success" ,"usertype": "Student","testid": "01"},
+{"username" : "rahulshettyacademy", "password": "learning" ,"expected": "success" ,"usertype": "Teacher","testid": "02"},
+{"username" : "rahulshettyacademy", "password": "learning" ,"expected": "success" ,"usertype": "Consultant","testid": "03"},
+{"username" : "rahulshettyacademy ", "password": "learning" , "expected": "Incorrect username/password.","usertype": "Student","testid": "04"},
+{"username" : "", "password": "" , "expected": "Empty username/password.","usertype": "Student","testid": "05"}
+]
